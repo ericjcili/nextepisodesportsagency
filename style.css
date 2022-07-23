@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 :root {
@@ -11,11 +10,13 @@
     --fill: rgb(0, 145, 126);
 }
 
+html, body {
+    overflow-x: hidden;
+}
 
 body {
     background-color: var(--secondary);
     margin: 0;
-    overflow-x: hidden;
 }
 
 .logo img {
@@ -94,7 +95,7 @@ nav {
     position: sticky;
     left: 25.5%;
     bottom: 16%;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, -210%);
     -ms-transform: translate(-50%, -50%);
     background-color: var(--fill);
     color: var(--primary);
@@ -161,6 +162,10 @@ nav {
 }
 .col-sm-3 {
     min-width: 250px;
+}
+.col-sm-3 i {
+    margin: 10px;
+    margin-top: 20px;
 }
 .h1-con {
     font-family: 'Poppins', sans-serif;
@@ -249,9 +254,6 @@ nav {
 }
 
 @media screen and (max-width:900px){
-    body {
-        overflow-x: hidden;
-    }
     .nav-links li {
         opacity: 0;
         margin-bottom: 30px;
@@ -276,9 +278,6 @@ nav {
 }
 
 @media screen and (max-width:480px){
-    body {
-        overflow-x: hidden;
-    }
     .header-top {
         display: none;
      }
