@@ -1,0 +1,10 @@
+<div class="slider">
+        <img src="images/web-images/slider2.JPG">
+    </div>
+<ul class="post-list">
+  {{#each posts as |post|}}
+  <li>
+    {{> post-info post }}
+  </li>
+  {{/each}}
+</ul>

@@ -1,0 +1,19 @@
+    <div class="container">
+    <article class="post-full">
+      <div class="title">
+        <span>
+            <h1 class="h1-post-full">{{title}}</h1>
+        </span>
+        <span class="details"><p class="p2-post-full">By {{user.username}} on {{format_date created_at}}</p></span><br>
+      </div>
+      <div class = "content">
+          <p class="p-post-full">{{post_text}}</p>
+      </div>
+      <p2 class="p2-tags-full">Tags: {{tags}}</p2>
+      <div>
+        <a href="javascript:history.back()">
+            <button class="btn-post">Return to Blogs</button>
+        </a>
+      </div>
+    </article>
+    </div>
