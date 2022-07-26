@@ -168,7 +168,7 @@ nav {
   background-color:var(--secondary);
   background-color: var(--fill);
   color: var(--primary);
-  font-size: 1.3vw;
+  font-size: 15px;
   padding: 12px 24px;
   margin-top: 50px;
   border: none;
@@ -176,6 +176,73 @@ nav {
   border-radius: 5px;   
   width: 200px;
   margin-bottom: 50px;
+}
+.btn-post2 {
+  padding:0.7em 1.4em;
+  margin:0 0.3em 0.3em 0;
+  border-radius: 15px;
+  border-style: none;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Poppins',sans-serif;
+  text-transform:uppercase;
+  color: var(--primary);
+  background-color: rgb(255, 76, 31);
+  color: var(--primary);
+  font-size: 15px;
+  padding: 12px 24px;
+  margin-top: 50px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;   
+  width: 200px;
+  margin-bottom: 50px;
+}
+.delete-post-btn {
+  padding:0.7em 1.4em;
+  margin:0 0.3em 0.3em 0;
+  border-radius: 15px;
+  border-style: none;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Poppins',sans-serif;
+  text-transform:uppercase;
+  color: var(--primary);
+  background-color: rgb(255, 76, 31);
+  color: var(--primary);
+  font-size: 15px;
+  padding: 12px 24px;
+  margin-top: 50px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;   
+  width: 200px;
+  margin-bottom: 50px;
+}
+.edit-btn-post {
+  padding:0.7em 1.4em;
+  margin:0 0.3em 0.3em 0;
+  border-radius: 15px;
+  border-style: none;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Poppins',sans-serif;
+  text-transform:uppercase;
+  color: var(--primary);
+  background-color: rgb(145, 145, 145);
+  color: var(--primary);
+  font-size: 15px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;   
+  width: 200px;
+  margin-bottom: 20px;
+}
+.btn-post2:hover{
+  background-color: rgb(170, 0, 0);
+  transition: 0.2s ease;
+  box-shadow:  0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .btn-main:hover{
   background-color: rgb(0, 83, 77);
@@ -203,6 +270,15 @@ nav {
 
 
 }
+.login-form input {
+  margin-bottom: 20px;
+  width: 250px;
+}
+.signup-form input {
+  margin-bottom: 20px;
+  width: 250px;
+}
+
 .h1-con:after {
   content: "";
   display: block;
@@ -275,6 +351,9 @@ nav {
   color: var(--secondary);
 
 }
+.new-post-form{
+  margin: 40px;
+}
 .p2-footer:after {
   content: "";
   display: block;
@@ -311,14 +390,14 @@ a:hover {
   padding-top: 40px;
 }
 .post {
-  margin: 18px;
+  padding: 18px;
   border-radius: 20px;
   background-color: var(--primary);
   padding-bottom: 50px;
 
 }
 .post2 {
-  margin: 18px;
+  padding: 18px;
   border-radius: 20px;
   padding-bottom: 50px;
   color: var(--primary);
@@ -328,6 +407,12 @@ a:hover {
   font-family: 'Poppins', sans-serif;
   font-size: 28px;
   color: var(--secondary);
+  text-decoration: none;
+}
+.h1-login {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  color: var(--primary);
   text-decoration: none;
 }
 .h2-post {
@@ -364,7 +449,7 @@ a:hover {
 
 }
 .post-full {
-  padding:40px;
+  padding:15px;
 }
 .h1-post-full {
   font-family: 'Poppins', sans-serif;
@@ -387,6 +472,11 @@ a:hover {
   margin-bottom: -10px;
 
 }
+.login-info {
+  padding: 10px;
+  background-color: aliceblue;
+  border-radius: 50px;
+}
 
 .p2-tags-full {
   font-family: 'Poppins', sans-serif;
@@ -394,6 +484,30 @@ a:hover {
   font-style: italic;
   color: var(--primary);
   opacity: 0.7;
+}
+.login-form {
+  margin: 100px;
+  font-family: 'Poppins', sans-serif;
+}
+.signup-form {
+  margin: 100px;
+  font-family: 'Poppins', sans-serif;
+}
+.new-post-form {
+  margin: 60px;
+  font-family: 'Poppins', sans-serif;
+}
+.new-post-form input {
+  width: 500px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+.new-post-form textarea {
+  padding: 10px;
+
+  width: 80vw;
+  height: 200px;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width:900px){

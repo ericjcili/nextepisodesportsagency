@@ -7,6 +7,7 @@ router.get('/', (req, res) => {
   Post.findAll({
       attributes: [
           'id',
+          'post_desc',
           'post_text',
           'title',
           'created_at',
@@ -41,6 +42,7 @@ router.get('/post/:id', (req, res) => {
     },
     attributes: [
       'id',
+      'post_desc',
       'post_text',
       'title',
       'created_at',
@@ -99,6 +101,9 @@ router.get('/our-services', (req, res) => {
 });
 router.get('/contact', (req, res) => {
   res.render('contact')
+});
+router.get('/login', (req, res) => {
+  res.render('login')
 });
 
 module.exports = router;

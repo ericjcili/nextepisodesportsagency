@@ -6,6 +6,7 @@ async function editFormHandler(event) {
     ];
 
     const title = document.querySelector('input[name="post-title"]').value;
+    const post_desc = document.querySelector('textarea[name="post-desc"]').value;
     const post_text = document.querySelector('textarea[name="post-text"]').value;
     const tags = document.querySelector('input[name="post-tags"]').value;
 
@@ -14,6 +15,7 @@ async function editFormHandler(event) {
         body: JSON.stringify({
           title,
           post_text,
+          post_desc,
           tags
         }),
         headers: {
@@ -21,7 +23,7 @@ async function editFormHandler(event) {
         }
       });
     if (response.ok) {
-        document.location.replace('/dashboard');
+        document.location.replace('/blog');
         } else {
         alert(response.statusText);
         }

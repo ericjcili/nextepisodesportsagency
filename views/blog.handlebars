@@ -2,9 +2,23 @@
         <img src="images/web-images/slider2.JPG">
     </div>
 <ul class="post-list">
+  {{#if loggedIn}}
+  <div class="container">
+    <div class="login-info">
+    <p class="h1-login">Logged in as: {{posts.[0].user.username}}</p>
+    <a href="/dashboard"><button class="btn-post">New Post</button></a>
+    <button id="logout" class="btn-post2">Logout</button>
+    </div>
+    </div>
+  {{/if}}
   {{#each posts as |post|}}
   <li>
     {{> post-info post }}
   </li>
+  
   {{/each}}
 </ul>
+
+{{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}

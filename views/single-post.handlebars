@@ -1,3 +1,11 @@
 {{> post-full-info post}}
-{{#if post.tags.length}}
-{{/if}}
+{{#if loggedIn}}
+<div class="text-center">
+      <div class="edit-btn">
+     <a href="/post/edit/{{post.id}}">
+      <button class="edit-btn-post">Edit Post
+      </button>
+      </a>
+      </div>
+      </div>
+      {{/if}}

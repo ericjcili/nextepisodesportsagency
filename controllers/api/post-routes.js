@@ -8,6 +8,7 @@ router.get('/', (req, res) => {
         attributes: [
             'id',
             'post_text',
+            'post_desc',
             'title',
             'created_at',
             'tags'
@@ -35,6 +36,7 @@ router.get('/:id', (req, res) => {
       attributes: [
         'id',
         'post_text',
+        'post_desc',
         'title',
         'created_at',
         'tags'
@@ -63,6 +65,7 @@ router.post('/', withAuth, (req, res) => {
     Post.create({
         title: req.body.title,
         post_text: req.body.post_text,
+        post_desc: req.body.post_desc,
         user_id: req.session.user_id,
         tags: req.body.tags
     })
