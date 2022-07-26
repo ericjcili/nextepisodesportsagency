@@ -473,9 +473,10 @@ a:hover {
 
 }
 .login-info {
-  padding: 10px;
+  display:grid;
+  padding: 30px;
   background-color: aliceblue;
-  border-radius: 50px;
+  border-radius: 20px;
 }
 
 .p2-tags-full {
@@ -498,14 +499,14 @@ a:hover {
   font-family: 'Poppins', sans-serif;
 }
 .new-post-form input {
-  width: 500px;
+  width: 70vw;
   margin-bottom: 30px;
   padding: 10px;
 }
 .new-post-form textarea {
   padding: 10px;
 
-  width: 80vw;
+  width: 70vw;
   height: 200px;
   margin-bottom: 30px;
 }
