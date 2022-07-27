@@ -649,7 +649,7 @@ a:hover {
       position: absolute;
       right: 0px;
       height: 100vh;
-      top: 7.9vh;
+      top: 80px;
       width: 30vh;
       background-color: var(--primary);
       display: none;
