@@ -133,7 +133,7 @@ nav {
   box-shadow:  0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .slider img {
-  width: 100%;
+  width: 100vw;
 }
 .h1-main {
   font-family: 'Poppins', sans-serif;

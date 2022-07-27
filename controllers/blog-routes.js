@@ -33,6 +33,17 @@ router.get('/', (req, res) => {
   });
 });
 
+router.get('/', (req, res) => {
+    User.findOne({
+      username: req.body.username,
+    })
+      .then(dbUserData => res.json(dbUserData))
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  });
+
 router.get('/edit/:id', (req, res) => {
   Post.findOne({
     where: {

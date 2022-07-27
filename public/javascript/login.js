@@ -1,3 +1,5 @@
+const { User } = require("../../models");
+
 async function loginFormHandler(event) {
     event.preventDefault();
 
@@ -15,6 +17,7 @@ async function loginFormHandler(event) {
         });
         if (response.ok) {
             document.location.replace('/blog');
+            return User;
         } else {
             let result = await response.json()
             alert(result.message)
