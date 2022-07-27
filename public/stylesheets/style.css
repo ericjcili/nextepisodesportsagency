@@ -457,6 +457,21 @@ nav {
 .new-post-form{
   margin: 40px;
 }
+.contact-form {
+  margin: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+.contact-form input {
+  width: 90%;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+.contact-form textarea {
+  padding: 10px;
+  width: 90%;
+  height: 200px;
+  margin-bottom: 30px;
+}
 .p2-footer:after {
   content: "";
   display: block;
@@ -663,6 +678,7 @@ a:hover {
 }
 
 .nav-active {
+  z-index: 100;
   display: flex;
   transform: translateX(0%);
   transition: transform 0.5s ease-in;
