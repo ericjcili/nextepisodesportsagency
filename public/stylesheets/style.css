@@ -61,7 +61,7 @@ nav {
   padding-top: 5px;
   justify-content: space-around;
   align-items: center;
-  min-height: 7vh;
+  min-height: 5vh;
   background-color: var(--primary);
   font-family: 'Poppins', sans-serif;
 }
