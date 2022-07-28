@@ -368,6 +368,13 @@ nav {
 .contact-container {
   margin: 5vw;
 }
+.post-container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.footer-container {
+  margin: 2%;
+}
 .col-sm i {
   margin: 10px;
   margin-top: 20px;
