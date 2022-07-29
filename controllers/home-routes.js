@@ -103,8 +103,8 @@ router.get('/blog', (req, res) => {
 router.get('/about-us', (req, res) => {
   res.render('about-us')
 });
-router.get('/our-services', (req, res) => {
-  res.render('our-services')
+router.get('/our-athletes', (req, res) => {
+  res.render('our-athletes')
 });
 router.get('/contact', (req, res) => {
   res.render('contact')

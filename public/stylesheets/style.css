@@ -6,6 +6,7 @@
 
 :root {
   --primary: #001427;
+  --sddssdds: #007eb4;
   --secondary: rgb(236, 236, 236);
   --button: #708D81;
   --fill: #b20900;
@@ -50,7 +51,7 @@ body {
   padding-right:70px;
 }
 .about-more {
-  padding: 10%;
+  padding: 7%;
   text-align: left;
   min-width: 500px;
 }
@@ -167,6 +168,25 @@ nav {
   text-align: center;
   padding: 10px;
 }
+.h1-main2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-style: italic;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+}
+.h1-small {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: var(--secondary);
+  text-transform: capitalize;
+  font-size: 30px;
+  text-align: left;
+  padding: 10px;
+  padding-top: 20px;
+}
 .admin-form h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
@@ -182,17 +202,44 @@ nav {
   text-align: center;
   padding: 25px;
 }
+.info-box {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.p-small {
+  font-family: 'Poppins', sans-serif;
+  color: var(--secondary);
+  font-size: 13px;
+  text-align: left;
+}
 .why-section {
   padding-top: 30px;
   background-image: url("../images/web-images/why-image.jpg");
-
+  background-size: cover;
 }
 .why-section li{
   list-style: none;
 }
+.why-section2 {
+  padding-top: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-image: url("../images/web-images/soccer-field.jpg");
+  background-size: cover;
+}
+.why-section2 li{
+  list-style: none;
+}
+.why-section2 p {
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+  font-size: 17px;
+  padding-left: 3vw;
+}
 .p-list {
   font-family: 'Poppins', sans-serif;
   text-transform: capitalize;
+  font-weight: bold;
   font-size: 17px;
   padding-left: 3vw;
 }
@@ -203,11 +250,12 @@ nav {
   margin-right: 10%;
   width: 90%;
   padding-bottom: 8px;
-  border-bottom: 1.5px solid var(--secondary);
+  border-bottom: 1.5px solid var(--primary);
 }
 .p-list-last {
   font-family: 'Poppins', sans-serif;
   text-transform: capitalize;
+  font-weight: bold;
   font-size: 17px;
   padding-left: 3vw;
   padding-bottom: 50px;
@@ -229,6 +277,25 @@ nav {
   background-color:var(--button);
   color: var(--primary);
   font-size: 25px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;   
+  margin-bottom: 50px;
+}
+.btn-small {
+  padding:0.7em 1.4em;
+  margin:0 0.3em 0.3em 0;
+  border-radius: 15px;
+  border-style: none;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Poppins',sans-serif;
+  text-transform:uppercase;
+  color: var(--primary);
+  background-color: var(--secondary);
+  color: var(--primary);
+  font-size: 15px;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
@@ -383,6 +450,11 @@ nav {
 .col-sm {
   min-width: 250px;
 }
+.info-boxes .col-sm {
+  width: 110%;
+  margin-left: -15px;
+  margin-right: -15px;
+}
 .row {
   width: auto;
 }
@@ -424,6 +496,60 @@ nav {
   transition: 0.3s;
   margin-bottom: 40px;
   max-width: 900px;
+}
+.meet-team {
+  padding-top: 20px;
+  padding: 5%;
+  background-color: var(--secondary);
+}
+.meet-team .col-md {
+  margin: 10px;
+}
+.handshake-img {
+  max-height: 300px;
+}
+.team-card  {
+  position: relative;
+  background-color: rgb(203, 203, 203);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.535);
+  max-width: 700px;
+  min-width: 300px;
+  height: 100%;
+}
+.team-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 100px;
+  filter: drop-shadow(0 0 7px var(--primary));
+}
+.team-card h1 {
+  font-size: 26px;
+  font-weight: bold;
+
+  font-family: 'Poppins', sans-serif;
+}
+.team-card p {
+  font-size: 15px;
+  font-style: italic;
+  opacity: 0.7;
+  margin-bottom: 30px;
+
+  font-family: 'Poppins', sans-serif;
+}
+.team-card-icons {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: black;
+  font-style: italic;
+  font-family: 'Poppins', sans-serif;
 }
 .user-info:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.535);
@@ -792,15 +918,18 @@ a:hover {
   .about-us-image img {
     width: auto;
     max-width: 300px;
-    top: 40px
+    position: relative;
+    margin-left: 25%;
+
   }
 }
 @media screen and (max-width:700px){
   .about-us-image img {
     top: 0;
-    position: relative;
     width: 300px;
-    margin-left: 25%;
+  }
+  .handshake-img {
+    max-height: 250px;
   }
 }
 
@@ -816,6 +945,9 @@ a:hover {
   }
   .user-info img {
     float: none;
+  }
+  .about-more {
+    min-width: 300px;
   }
 }
 

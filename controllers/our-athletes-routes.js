@@ -22,7 +22,7 @@ router.get('/', (req, res) => {
   })
   .then(dbPostData => {
     const posts = dbPostData.map(post => post.get({ plain: true }));
-    res.render('our-services', {
+    res.render('our-athletes', {
       posts,
       loggedIn: req.session.loggedIn
     });
