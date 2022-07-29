@@ -19,7 +19,10 @@ router.get('/', withAuth, (req, res) => {
         include: [
           {
             model: User,
-            attributes: ['username']
+            attributes: [
+              'username',
+              'email'
+            ]
           }
         ]
       })
@@ -65,5 +68,6 @@ router.get('/', withAuth, (req, res) => {
             res.status(500).json(err);
           });
       });
+
 
       module.exports = router;

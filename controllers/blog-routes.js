@@ -15,8 +15,11 @@ router.get('/', (req, res) => {
       order: [[ 'created_at', 'DESC']],
       include: [
           {
-              model: User,
-              attributes: ['username']
+            model: User,
+            attributes: [
+              'username',
+              'email'
+            ]
           }
       ]
   })
@@ -34,14 +37,19 @@ router.get('/', (req, res) => {
 });
 
 router.get('/', (req, res) => {
-    User.findOne({
-      username: req.body.username,
-    })
-      .then(dbUserData => res.json(dbUserData))
-      .catch(err => {
+  User.findOne({
+    where: {
+      id: req.session.user_id
+    },
+    attributes: [username],
+  })
+  .then(dbUserData => res.json(dbUserData))
+    .catch(err => {
         console.log(err);
         res.status(500).json(err);
-      });
+        const user = dbUserData.get({ plain: true });
+        res.render('', {user, loggedIn: true});
+    });
   });
 
 router.get('/edit/:id', (req, res) => {
@@ -59,7 +67,10 @@ router.get('/edit/:id', (req, res) => {
     include: [
       {
         model: User,
-        attributes: ['username']
+        attributes: [
+          'username',
+          'email'
+        ]
       }
     ]
   })
