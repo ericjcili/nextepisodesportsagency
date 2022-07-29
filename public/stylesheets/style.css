@@ -513,6 +513,9 @@ nav {
 .new-post-form{
   margin: 40px;
 }
+.edit-user-form{
+  margin: 40px;
+}
 .p-post-full {
   white-space: pre-line;
 }
@@ -682,6 +685,22 @@ a:hover {
   padding: 10px;
 }
 .new-post-form textarea {
+  padding: 10px;
+
+  width: 70vw;
+  height: 200px;
+  margin-bottom: 30px;
+}
+.edit-user-form {
+  margin: 60px;
+  font-family: 'Poppins', sans-serif;
+}
+.edit-user-form input {
+  width: 70vw;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+.edit-user-form textarea {
   padding: 10px;
 
   width: 70vw;

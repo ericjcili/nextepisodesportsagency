@@ -1,0 +1,26 @@
+  <form class="edit-user-form">
+    <a href="/blog">
+            <button class="btn-post" style="background-color: grey;">Return to Blogs</button>
+        </a>
+  <h2>
+    Update My Information
+  </h2>
+    <div>
+      <label for="user-name">Username</label> <br>  
+      <input autocomplete="off" name="user-name" type="text" value="{{user.username}}" />
+    </div>
+    <div>
+      <label for="email">User Email</label> <br>  
+      <input autocomplete="off" name="email" value="{{user.email}}" />
+    </div>
+     <div>
+      <label for="password">Password</label>    <br>      
+      <input autocomplete="off" type="password" name="password" />
+    </div>
+    <div>
+      <input type="hidden" id="user-id" name="user-id" value={{user.id}} />
+    </div>   
+    <button type="submit" class="btn-post">Update</button>
+  </form>
+
+<script src="/javascript/edit-user.js"></script>

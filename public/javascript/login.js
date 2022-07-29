@@ -1,5 +1,3 @@
-const { User } = require("../../models");
-
 async function loginFormHandler(event) {
     event.preventDefault();
 

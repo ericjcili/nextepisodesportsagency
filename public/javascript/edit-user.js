@@ -26,7 +26,7 @@ let username = document.querySelector('input[name="user-name"]').value.trim();
         }
       });
     if (response.ok) {
-        document.location.replace('/dashboard');
+        document.location.replace('/blog');
         } else {
         alert(response.statusText);
         }
