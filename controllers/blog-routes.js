@@ -21,7 +21,8 @@ router.get('/', (req, res) => {
             model: User,
             attributes: [
               'username',
-              'email'
+              'email',
+              'bio'
             ]
           }
       ]
@@ -56,7 +57,8 @@ router.get('/edit/:id', withAuth, (req, res) => {
         model: User,
         attributes: [
           'username',
-          'email'
+          'email',
+          'bio'
         ]
       }
     ]

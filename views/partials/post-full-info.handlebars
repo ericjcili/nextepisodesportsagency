@@ -1,4 +1,4 @@
-    <div class="container">
+    <div class="full-post-container">
     <article class="post-full">
       <div class="title">
         <span>
@@ -20,14 +20,14 @@
       </div>
       <div class="user-info">
         <div class="row">
-          <div class="col-sm">
+          <div class="col-sm-3">
             <div class="text-center">
             <img src="/images/uploaded-images/{{user.email}}.jpg" />
             </div>
           </div>
-          <div class="col-sm">
-            <h1>Posted by {{user.username}}.</h1>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+          <div class="col-sm-9">
+            <h1>Posted by {{user.username}}</h1>
+            <p>"{{user.bio}}"</p>
           </div>
         </div>
       </div>

@@ -372,6 +372,10 @@ nav {
   margin-left: 10%;
   margin-right: 10%;
 }
+.full-post-container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
 .footer-container {
   margin: 2%;
 }
@@ -392,9 +396,10 @@ nav {
   background-color: rgb(203, 203, 203);
   padding: 30px;
   border-radius: 20px;
-  margin-bottom: 40px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.535);
   transition: 0.3s;
+  margin-bottom: 40px;
+  max-width: 900px;
 }
 .user-info:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.535);
@@ -402,17 +407,25 @@ nav {
 }
 .user-info img {
   width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-top: auto;
+  margin-top: 5%;
+  float: left;
   border-radius: 100px;
   border: 1px solid var(--primary);
   filter: drop-shadow(0 0 7px var(--primary));
 }
 .user-info h1 {
+  padding-left: 30px;
+
   font-size: 23px;
   margin-top: 20px;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
 }
 .user-info p {
+  padding-left: 30px;
   font-size: 15px;
   font-style: italic;
   opacity: 0.7;
@@ -752,6 +765,9 @@ a:hover {
   }
   .footer {
       padding: 30px;
+  }
+  .user-info img {
+    float: none;
   }
 }
 

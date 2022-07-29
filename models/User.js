@@ -28,6 +28,9 @@ User.init(
             isEmail: true
             }
         },
+        bio: {
+          type: DataTypes.TEXT,
+          },
         password: {
         type: DataTypes.STRING,
         allowNull: false,
