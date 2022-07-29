@@ -236,11 +236,19 @@ nav {
   font-size: 17px;
   padding-left: 3vw;
 }
+.why-section2 i {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.wwd-list {
+  min-width: 300px;
+}
 .p-list {
   font-family: 'Poppins', sans-serif;
   text-transform: capitalize;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 16px;
   padding-left: 3vw;
 }
 .p-list:after {
@@ -249,6 +257,7 @@ nav {
   margin: 0 auto;
   margin-right: 10%;
   width: 90%;
+  padding-top: 8px;
   padding-bottom: 8px;
   border-bottom: 1.5px solid var(--primary);
 }
@@ -917,7 +926,6 @@ a:hover {
 @media screen and (max-width:1000px){
   .about-us-image img {
     width: auto;
-    max-width: 300px;
     position: relative;
     margin-left: 25%;
 
@@ -948,6 +956,13 @@ a:hover {
   }
   .about-more {
     min-width: 300px;
+  }
+  .handshake-img {
+    max-height: 200px;
+  }
+  .about-us-image img {
+    margin-left: 15%;
+
   }
 }
 
