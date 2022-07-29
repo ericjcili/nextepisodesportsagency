@@ -1,9 +1,9 @@
   <form class="edit-user-form">
     <a href="/blog">
-            <button class="btn-post" style="background-color: grey;">Return to Blogs</button>
+            <button class="btn-post" style="background-color: rgb(212, 57, 57);">Cancel</button>
         </a>
-  <h2>
-    Update My Information
+  <h2 class="h1-con">
+    <i class="fa-solid fa-file-pen"></i> Update My Information
   </h2>
     <div>
       <label for="user-name">Username</label> <br>  
@@ -15,16 +15,18 @@
     </div>
     <div>
       <label for="bio">Bio</label> <br>  
-      <input autocomplete="off" name="bio" value="{{user.bio}}" />
+      <input autocomplete="off" name="bio" value="{{user.bio}}"/>
     </div>
      <div>
-      <label for="password">Password</label>    <br>      
+      <label for="password">Password *</label>    <br>      
       <input autocomplete="off" type="password" name="password" />
     </div>
     <div>
       <input type="hidden" id="user-id" name="user-id" value={{user.id}} />
     </div>   
     <button type="submit" class="btn-post">Update</button>
+          <p style="font-style: italic; font-size: 20px; opacity: 0.7;">Note: To upload new profile image: upload photo into <br>/images/uploaded-images and title the image "your email".jpg.<br>Example:<br> your@email.com.jpg</p>
+
   </form>
 
 <script src="/javascript/edit-user.js"></script>

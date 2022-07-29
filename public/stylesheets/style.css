@@ -431,6 +431,17 @@ nav {
   opacity: 0.7;
   font-family: 'Poppins', sans-serif;
 }
+.user-info-icons {
+  padding-left: 30px;
+  font-size: 15px;
+  color: black;
+  font-style: italic;
+  font-family: 'Poppins', sans-serif;
+}
+.fa-brands {
+  color: #001427;
+  margin-right: 20px;
+}
 .login-form input {
   margin-bottom: 20px;
   width: 250px;
@@ -438,15 +449,6 @@ nav {
 .signup-form input {
   margin-bottom: 20px;
   width: 250px;
-}
-
-.h1-con:after {
-  content: "";
-  display: block;
-  margin: 0 auto;
-  width: 50%;
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--primary);
 }
 .admin-form {
   margin: 30px;
