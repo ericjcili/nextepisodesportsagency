@@ -3,20 +3,12 @@ async function editFormHandler(event) {
 
 let username = document.querySelector('input[name="user-name"]').value.trim();
     if(username.length) username = '"username": "' + username + '"';
-    let email = document.querySelector('input[name="email"]').value.trim();
-    if(email.length) email = '"email": "' + email + '"';
     let bio = document.querySelector('input[name="bio"]').value.trim();
     if(bio.length) bio = '"bio": "' + bio + '"';
-    let password = document.querySelector('input[name="password"]').value.trim();
-    if (!password.length) {
-        alert('You must enter your current password to confirm changes or enter a new password.');
-        return
-    } else {
-        password = '"password": "' + password + '"';
-    }
+
     const id = document.querySelector('input[name="user-id"]').value;
 
-    let userUpdate = '{' + [username, email, bio, password].filter(value => value).join(',') + '}';
+    let userUpdate = '{' + [username, bio].filter(value => value).join(',') + '}';
     userUpdate = JSON.parse(userUpdate)
 
 

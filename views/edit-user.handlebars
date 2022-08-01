@@ -1,25 +1,14 @@
   <form class="edit-user-form">
-    <a href="/blog">
-            <button class="btn-post" style="background-color: rgb(212, 57, 57);">Cancel</button>
-        </a>
   <h2 class="h1-con">
     <i class="fa-solid fa-file-pen"></i> Update My Information
   </h2>
     <div>
-      <label for="user-name">Username</label> <br>  
+      <label for="user-name">Your Name</label> <br>  
       <input autocomplete="off" name="user-name" type="text" value="{{user.username}}" />
-    </div>
-    <div>
-      <label for="email">User Email</label> <br>  
-      <input autocomplete="off" name="email" value="{{user.email}}" />
     </div>
     <div>
       <label for="bio">Bio</label> <br>  
       <input autocomplete="off" name="bio" value="{{user.bio}}"/>
-    </div>
-     <div>
-      <label for="password">Password *</label>    <br>      
-      <input autocomplete="off" type="password" name="password" />
     </div>
     <div>
       <input type="hidden" id="user-id" name="user-id" value={{user.id}} />

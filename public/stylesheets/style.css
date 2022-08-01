@@ -632,6 +632,7 @@ nav {
   width: auto;
   position: absolute; 
   bottom: 0;
+  margin-left: 15%
 }
 .footer {
   background-color: var(--primary);
