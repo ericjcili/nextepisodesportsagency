@@ -1,0 +1,11 @@
+{{> athlete-full-info athlete}}
+{{#if loggedIn}}
+<div class="text-center">
+      <div class="edit-btn">
+     <a href="/athlete/edit/{{athlete.id}}">
+      <button class="edit-btn-post">Edit Athlete Info
+      </button>
+      </a>
+      </div>
+      </div>
+      {{/if}}

@@ -1,0 +1,37 @@
+<div class="new-post-form">
+  <h2 class="h1-con">
+    <i class="fa-solid fa-pen-to-square"></i> Edit Athlete Info
+  </h2>
+  <form class="edit-post-form">
+    <div>
+      <label for="ath-name">Name</label>
+      <br>
+      <input name="ath-name" type="text" value="{{athlete.ath_name}}" />
+    </div>
+    <div>
+      <label for="ath-desc">Description</label>
+            <br>
+
+      <textarea name="ath-desc">{{athlete.ath_desc}}</textarea>
+    </div>
+    <div>
+      <label for="ath-info">More Information</label>
+            <br>
+
+      <textarea name="ath-info" style="white-space: pre-line">{{athlete.ath_info}}</textarea>
+    </div>
+    <div>
+      <label for="pic-title">Image title</label>
+            <br>
+
+      <input name="pic-title" type="text" value="{{athlete.pic_title}}" />
+    </div>
+    <p class="p-post" style="font-style: italic; font-size: 12px;">Upload athlete image as a .jpg file matching your image title to /public/images/athletes.</p>
+        <p class="p-post" style="font-style: italic; font-size: 12px;">I.e. your input image title: "freddieswain", upload athlete's image to /public/images/athletes: "freddieswain.jpg"</p>
+    <button type="submit" class="btn-post-login">Save Athlete</button>
+    <button type="button" class="delete-post-btn">Delete Athlete</button>
+  </form>
+</div>
+
+<script src="/javascript/edit-athlete.js"></script>
+<script src="/javascript/delete-athlete.js"></script>

@@ -29,6 +29,35 @@ const athleteData = [
     pic_title: "zachharting",
     user_id: 1,
   },
+  //
+  {
+    ath_name: 'Freddie Swain',
+    ath_desc: "Wide Receiver, Seattle Seahawks",
+    ath_info: "Freddie Swain (born August 4, 1998) is an American football wide receiver for the Seattle Seahawks of the National Football League (NFL). He played college football for the Florida Gators. Early years Swain attended North Marion High School, where he was a consensus four-star recruit and fielded scholarship offers from Alabama and Clemson before selecting Florida. As a return specialist, Swain returned 22 punts for 224 yards in 2018, including an 85-yard return for a touchdown. In 2019, he compiled 14 returns for 56 yards. Swain tallied 38 catches for 527 yards and a team-high seven touchdowns as a senior. In 47 career games, including 10 starts, Swain gained 1,387 all-purpose yards. He had 69 career receptions for 996 yards and 15 touchdowns.",
+    pic_title: "freddieswain",
+    user_id: 1,
+  },
+  {
+    ath_name: 'CeCe Jefferson',
+    ath_desc: "Defensive Lineman, Outside Linebacker, University of Florida",
+    ath_info: "2017: Played in all 11 games and recorded eight starts at defensive end… Totaled 47 tackles, which ranked fourth on the team…Led the team in tackles-for-loss (13.5 for 38 yards) and sacks (4.5 for 14 yards)… Totaled a career-best nine tackles against Florida State (Nov. 25)… Earned SEC Defensive Player of the Week honors after he registered a career-best 1.5 sacks against Kentucky… Also recorded one pass breakup and six quarterback hurries, which ranked second on the team… 2016: Played in 12 games and started six… Missed Florida’s South Carolina due to an injury… Totaled 30 tackles, 6.5 tackles-for-loss, 1.5 sacks and five quarterback hurries… Notched a season-high five tackles and two quarterback hurries against Missouri… Recorded three solo tackles, including one tackle-for-loss against Iowa in the Outback Bowl… 2015: Appeared in all 14 games, starting in four of them… Named to the SEC Coaches All-Freshman team…Named to the PFF All-Freshman Second Team…Tied for third on the team with 3.5 sacks.",
+    pic_title: "cecejefferson",
+    user_id: 1,
+  },
+  {
+    ath_name: 'Martez Ivey',
+    ath_desc: "Offensive Lineman, University of Florida",
+    ath_info: "2017: Played and started in all 11 games… Started the first nine games at left tackle and the final two contests of the season at left guard… He and Jawaan Taylor were the only two Florida offensive linemen to start each game… Named Second Team All-SEC by the league’s Coaches and the Associated Press… Garnered Third Team All-SEC honors by Phil Steele… 2016: Played in 13 games and made 12 starts… Had recorded 19 straight starts at left guard prior to the SEC Championship Game against Alabama… Two-time SEC Offensive Lineman of the Week (UGA, South Carolina)… Named Second Team All-SEC by the league’s Coaches and the Associated Press… Garnered Third Team All-SEC honors by Athlon Sports… 2015: Played in 12 games, starting in the last eight at left guard…Also saw time as a backup at tackle… Named to the SEC Coaches All-Freshman team.",
+    pic_title: "martezivey",
+    user_id: 1,
+  },
+  {
+    ath_name: 'Matt Jones',
+    ath_desc: "Running Back, Indianapolis Colts",
+    ath_info: "Matt Jones is an American football running back that plays in the NFL for the Washington Redskins. He was drafted in the 3rd round of the 2015 draft. Prior to the NFL, Matt played college football at the University of Florida. As a freshman in 2012, he appeared in 12 games where he rushed for 275 yards on 52 carries with 3 touchdowns. In 2013 as a sophomore, Matt played in only 5 games due to a torn meniscus. Despite his injury, he finished the year with 339 yards on 79 carries with 2 touchdowns. Prior to his junior season, Matt was named preseason 3rd-team All-SEC by his coaches. During that 2014 year, he rushed for 817 yards on 166 carries and 6 touchdowns.",
+    pic_title: "mattjones",
+    user_id: 1,
+  },
 ]
 
 const seedAthletes = () => Athlete.bulkCreate(athleteData);

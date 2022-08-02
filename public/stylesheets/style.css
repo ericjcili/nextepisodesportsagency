@@ -495,10 +495,30 @@ nav {
   margin-bottom: 10px;
 
 }
+.athlete-container img:hover {
+  transition: ease 0.5s;
+  opacity: 0.4;
+
+}
+.full-ath-pic {
+  width: 550px;
+  height: 400px;
+  object-fit: cover;
+  border: 1px solid black;
+  margin-bottom: 10px;
+
+}
 .athlete-list {
+  padding-top: 30px;
   padding-left: 2%;
   padding-right: 2%;
   background-color: rgb(203, 203, 203);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.our-ath-footer {
+  padding-top: 60px; 
+  padding-bottom: 50px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
 }
@@ -726,6 +746,9 @@ nav {
   margin: 40px;
 }
 .p-post-full {
+  white-space: pre-line;
+}
+.p2-tags-full {
   white-space: pre-line;
 }
 .contact-form {
@@ -984,6 +1007,21 @@ a:hover {
   .handshake-img {
     max-height: 250px;
   }
+  .full-ath-pic {
+    width: 450px;
+    height: 300px;
+  }
+}
+@media screen and (max-width:575px){
+  .athlete-container img {
+    width: 90%;
+    height: 300px;
+  }
+  .full-ath-pic {
+    width: 350px;
+    height: 350px;
+  }
+
 }
 
 @media screen and (max-width:480px){
@@ -991,7 +1029,7 @@ a:hover {
       display: none;
    }
   .nav-links {
-      padding-top: 20px;
+      margin-top: -10px;
   }
   .footer {
       padding: 30px;
@@ -1008,6 +1046,10 @@ a:hover {
   .about-us-image img {
     margin-left: 15%;
 
+  }
+  .full-ath-pic {
+    width: 300px;
+    height: 300px;
   }
 }
 
