@@ -1,0 +1,38 @@
+<section class="row">
+  <div class = "column">
+    <form class="new-athlete-form">
+        <div class="column">
+                <h2 class="h1-con"><i class="fa-solid fa-pen-to-square"></i> New Athlete</h2>
+      <div>
+        <label for="ath-name">Athlete Name</label>
+        <br>
+        <input autocomplete="off" type="text" id="ath-name" name="ath-name" />
+      </div>
+      <div>
+        <label for="ath-desc">Description</label>
+                <br>
+
+        <textarea autocomplete="off" id="ath-desc" name="ath-desc" contenteditable="true"></textarea>
+      </div>
+      <div>
+        <label for="ath-info">Details</label>
+                <br>
+
+        <textarea autocomplete="off" id="ath-info" name="ath-info"></textarea>
+      </div>
+      <div>
+        <label for="pic-title">Image title</label>
+                <br>
+
+        <input autocomplete="off" id="pic-title" name="pic-title">
+        <p class="p-post" style="font-style: italic; font-size: 12px;">Upload athlete image as a .jpg file matching your image title to /public/images/athletes.</p>
+        <p class="p-post" style="font-style: italic; font-size: 12px;">I.e. your input image title: "freddieswain", upload athlete's image to /public/images/athletes: "freddieswain.jpg"</p>
+      </div>
+      <button type="submit" class="btn-post">Create</button>
+      </div>
+    </form>
+  </div>
+</div>
+</section>
+
+<script src="/javascript/add-athlete.js"></script>

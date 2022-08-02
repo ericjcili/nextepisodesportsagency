@@ -477,6 +477,31 @@ nav {
   margin-left: 10%;
   margin-right: 10%;
 }
+.athlete-container {
+  text-align: center;
+  margin: 20px;
+}
+.athlete {
+  padding: 18px;
+  border-radius: 20px;
+  background-color: var(--seondary);
+  padding-bottom: 20px;
+}
+.athlete-container img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 1px solid black;
+  margin-bottom: 10px;
+
+}
+.athlete-list {
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: rgb(203, 203, 203);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
 .full-post-container {
   margin-left: 10%;
   margin-right: 10%;
@@ -694,6 +719,9 @@ nav {
 .new-post-form{
   margin: 40px;
 }
+.new-athlete-form{
+  margin: 40px;
+}
 .edit-user-form{
   margin: 40px;
 }
@@ -754,9 +782,9 @@ a:hover {
   padding: 18px;
   border-radius: 20px;
   background-color: var(--seondary);
-  padding-bottom: 50px;
-
+  padding-bottom: 20px;
 }
+
 .post2 {
   padding: 18px;
   border-radius: 20px;
@@ -866,6 +894,22 @@ a:hover {
   padding: 10px;
 }
 .new-post-form textarea {
+  padding: 10px;
+
+  width: 70vw;
+  height: 200px;
+  margin-bottom: 30px;
+}
+.new-athlete-form {
+  margin: 60px;
+  font-family: 'Poppins', sans-serif;
+}
+.new-athlete-form input {
+  width: 70vw;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+.new-athlete-form textarea {
   padding: 10px;
 
   width: 70vw;

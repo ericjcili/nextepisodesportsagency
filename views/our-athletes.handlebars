@@ -1,3 +1,32 @@
 <div class="slider">
         <img src="/images/web-images/slider3.JPG">
     </div>
+    {{#if loggedIn}}
+  <div class="admin-form">
+    <div class="login-info">
+    <h1 class="h1-main-login"><i class="fa-solid fa-user-gear"></i> Logged in
+</h1>
+  <div class="text-center">
+    <a href="/new-athlete"><button class="btn-post-login">New Athlete</button></a>
+    <button id="logout" class="btn-post-login2">Logout</button>
+
+</div>
+    </div>
+    </div>
+  {{/if}}
+    <div class="our-athletes">
+        <h1 class="h1-main" style="margin-top: 20px;">Our athletes</h1>
+        <p class="p-main">These Next Episode Athletes are either currently represented or have been represented by our agents for their contractual negotiations, marketing and endorsements, and/or legal needs.</p>
+    </div>
+    <div class="athlete-list">
+    <div class="row">
+  {{#each athletes as |athlete|}}
+    {{> athlete-info athlete}}
+  {{/each}}
+    </div>  
+    </div>
+
+
+{{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
