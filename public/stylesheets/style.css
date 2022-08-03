@@ -14,6 +14,8 @@
 
 html, body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
+
 }
 
 body {
@@ -250,6 +252,11 @@ nav {
   font-weight: bold;
   font-size: 16px;
   padding-left: 3vw;
+}
+.p-contact {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: -5px;
+
 }
 .p-list:after {
   content: "";
@@ -494,6 +501,15 @@ nav {
   border: 1px solid black;
   margin-bottom: 10px;
 
+}
+.quick-links {
+  list-style: none;
+}
+.quick-links li {
+  margin-bottom: 15px;
+}
+.quick-links li:hover {
+  opacity: 0.7;
 }
 .athlete-container img:hover {
   transition: ease 0.5s;

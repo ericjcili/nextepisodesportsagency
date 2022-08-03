@@ -1,43 +1,6 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Athlete , Post, User } = require('../models');
-
-
-router.get('/', (req, res) => {
-  Post.findAll({
-      attributes: [
-          'id',
-          'post_desc',
-          'post_text',
-          'title',
-          'created_at',
-          'tags'
-        ],
-      order: [[ 'created_at', 'DESC']],
-      include: [
-          {
-              model: User,
-              attributes: [
-                'username',
-                'email'
-              ]
-          }
-      ]
-  })
-  .then(dbPostData => {
-    const posts = dbPostData.map(post => post.get({ plain: true }));
-    res.render('homepage', {
-      posts,
-      loggedIn: req.session.loggedIn
-    });
-  })
-  .catch(err => {
-      console.log(err);
-      res.status(500).json(err);
-  });
-  
-});
-
 router.get('/post/:id', (req, res) => {
   Post.findOne({
     where: {
@@ -132,7 +95,7 @@ router.get('/', (req, res) => {
   })
   .then(dbAthleteData => {
     const athletes = dbAthleteData.map(athlete => athlete.get({ plain: true }));
-    res.render('our-athletes', {
+    res.render('homepage', {
       athletes,
       loggedIn: req.session.loggedIn
     });

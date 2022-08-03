@@ -81,34 +81,34 @@
                 WHY CHOOSE NEXT EPISODE
             </h1>
             <p class="p-main" style="color: var(--secondary);">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Our intimate client relations & attention to detail sets Next Episode apart from the rest
             </p>
                 <div class="row">
                     <div class="col-md">
                     <li>
                         <p class="p-list" style="color: var(--secondary);">
                             <i class="fa-solid fa-check"></i>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            Assistance in navigating NIL opportunities compliantly
                         </p>
                         <p class="p-list" style="color: var(--secondary);">
                             <i class="fa-solid fa-check"></i>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            Partnerships with businesses and projects that help support student-athletes through NIL
                         </p>
                         <p class="p-list" style="color: var(--secondary);">
                             <i class="fa-solid fa-check"></i>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            Contract negotiation
                         </p>
                         <p class="p-list" style="color: var(--secondary);">
                             <i class="fa-solid fa-check"></i>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            Financial education
                         </p>
                         <p class="p-list" style="color: var(--secondary);">
                             <i class="fa-solid fa-check"></i>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            Tax and estate planning
                         </p>
                         <p class="p-list-last" style="color: var(--secondary);">
                             <i class="fa-solid fa-check"></i>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            Insurance and financial planning
                         </p>
                     </li>
                     </div>
@@ -124,4 +124,24 @@
                 </a>
             </div>
         </div>
+        <div class="our-athletes">
+        <h1 class="h1-main" style="margin-top: 20px;">Our athletes</h1>
+        <p class="p-main">These Next Episode Athletes are either currently represented or have been represented by our agents for their contractual negotiations, marketing and endorsements, and/or legal needs.</p>
+    </div>
+            <div class="athlete-list">
+    <div class="row">
+  {{#each athletes as |athlete|}}
+    {{> athlete-info athlete}}
+  {{/each}}
+    </div>  
+    </div>
+    <div class="our-ath-footer">
+      <h1 class="h1-main" style="font-size: 50px;">Join the list</h1>
+      <p class="p-main">Our certified contract advisors are ready to take your career to the next level</p>
+      <div class="text-center">
+                            <a href="/contact">
+                                <button class="btn-main" style="width: 140px; height: 45px; font-size: 13px;">contact us</button>
+                            </a>
+                        </div>
+    </div>
     </div>
