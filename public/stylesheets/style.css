@@ -486,7 +486,7 @@ nav {
 }
 .athlete-container {
   text-align: center;
-  margin: 20px;
+  margin: 50px;
 }
 .athlete {
   padding: 18px;
@@ -495,12 +495,22 @@ nav {
   padding-bottom: 20px;
 }
 .athlete-container img {
-  width: 250px;
-  height: 250px;
+  width: 380px;
+  height: 380px;
+  margin-left: -50px;
   object-fit: cover;
   border: 1px solid black;
   margin-bottom: 10px;
-
+}
+@media screen and (max-width:1400px){
+.athlete-container img {
+  width: 250px;
+  height: 250px;
+  margin-left: 0px;
+}
+.athlete-container {
+  margin: 20px;
+}
 }
 .quick-links {
   list-style: none;
