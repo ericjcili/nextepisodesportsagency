@@ -1,3 +1,4 @@
+quit
 
 DROP DATABASE IF EXISTS nesa_db;
 

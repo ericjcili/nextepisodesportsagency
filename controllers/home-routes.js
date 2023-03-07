@@ -172,5 +172,8 @@ router.get('/contact', (req, res) => {
 router.get('/login', (req, res) => {
   res.render('login')
 });
+router.get('/thank-you', (req, res) => {
+  res.render('thank-you')
+});
 
 module.exports = router;
